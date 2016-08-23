@@ -1,0 +1,84 @@
+<DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Currency Transactions</title>
+	<link type="text/css" href="styles/layout.css" rel="stylesheet"></link>
+	<script language="javascript" type="text/javascript" src="scripts/script.js"></script>
+</head>
+<body>
+<div class="container">
+	<h1><span id="text_heading">Transakcje Walutowe</span></h1>
+	<div class="section-box-padding-horizontal">
+		<span class="lang">PL</span> | <span class="lang">EN</span> | <span class="lang">DE</span>
+	</div>
+
+	<!-- section: error-Box -->
+	<div class="section-box section-box-margin-padding section-border error-box elementHidden" id="errorBox">
+		<span class="error-schrift" id="errorSpan"></span>
+	</div>
+
+	<!-- section: przelicznik walutowy -->
+	<div class="section-box section-box-margin-padding section-border">
+		<table>
+			<tr>
+				<td class="tdCol1"><span><span id="text_conversionRate">Przelicznik walutowy:</span> 1 EUR = </span></td>
+				<td class="tdCol2"><span></span><input class="hoverEffect" type="text" id="txtConversionRate" panski="abcd" placeholder="(przelicznik)"></input><span> PLN</span></td>
+			</tr>
+		</table>
+	</div>
+
+	<!-- section: input nowej transakcji -->
+	<div class="section-box section-box-margin-padding section-border">
+		<table class="">
+			<tr>
+				<td class="tdCol1"><span id="text_transactionName">Nazwa transakcji: </span></td>
+				<td class="tdCol2"><input class="hoverEffect" type="text" id="txtTransactionName" panski="abcd"placeholder="(nazwa)"></input></td>
+			</tr>
+			<tr>
+				<td class="tdCol1"><span id="text_amountEUR">Kwota EUR: </span></td>
+				<td class="tdCol2"><input class="hoverEffect" type="text" id="txtAmountEUR" panski="abcd"placeholder="(kwota transakcyjna)"></input><span> </span></td>
+			</tr>
+			<tr>
+				<td><span id="text_amountPLN">Kwota PLN: </span></td>
+				<td><span id="cpResult">0</span> </td>
+			</tr>
+		</table>
+	</div>
+
+	<!-- section: Lista transakcji -->
+	<div class="section-box section-box-margin-padding section-border">
+		<div class="marginbottom">
+			<button class="btn" id="addTransaction">Dodaj</button>
+			<button class="btn" id="dropTransaction" disabled="disabled">Usuń</button>
+		</div>
+		<div class="inline floatleft marginright two-third-width">
+			<table class="transaction-table elementHidden box-border-radius" id="transactionTable">
+				<thead>	
+					<tr>
+						<th><span id="text_tbl_transactionName">Nazwa transakcji</span> </th>
+						<th><span id="text_tbl_amountEUR">Kwota</span> EUR </th>
+						<th><span id="text_tbl_amountPLN">Kwota</span> PLN </th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+				<tfoot>
+					<tr id="trSum">	
+						<td><span id="text_tbl_sumTransaction">Suma transakcji:</span> </td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+
+		<!-- section Highest Transaction -->
+		<div class="inline elementHidden paddingtopfive" id="secHighestTrans">
+		</div>
+
+		<div class="floatstop"></div>
+	</div>
+</div>
+</body>
+</html>

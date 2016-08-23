@@ -1,0 +1,109 @@
+body { margin: 0; border: 0; font-size: 13pt; font-family: Arial,Helvetica,sans-serif; 
+	vertical-align: top; background-color: white;}
+h1 { position: relative; }
+input { border-radius: 5px; }
+input[type="text"] { border-width: 3px; border-style: solid; }
+table, input { font-size: 13pt; vertical-align: top; }
+
+.tdCol1 { width: 250px; }
+.tdCol2 {  }
+
+.hoverEffect:hover { border-color: #0080FF; }
+.hoverEffect:hover { border-color: #0080FF; }
+div div #transactionTable tbody .hoverEffectTblLine:hover { color: rgb(0,128,255); }
+
+.marginright { margin-right: 10px; }
+.marginbottom { margin-bottom: 10px; }
+.paddingtopzero { padding-top: 0px; }
+.paddingtopfive { padding-top: 5px; }
+
+.inline { display: inline; }
+.floatleft { float: left; }
+.floatstop { clear: left; }
+
+.container {
+	margin: 20px 5%;
+	border: 4px solid black;
+	padding: 20px;
+
+	border-radius: 20px;	
+
+	background-color: #EEE8AA;
+	background-color: white;
+}
+
+.section-box-margin-padding {
+	margin-top: 10px;
+	padding-top: 15px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+}
+
+.section-box-padding-horizontal {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.section-border {
+	border: 1px solid black;
+}
+
+.section-box {
+	background-color: #DEB887; 
+	border-radius: 20px;	
+}
+
+.box-border-radius { border-radius: 5px; }
+
+.lang:hover {
+	color: #0080FF;
+	text-decoration: underline;
+	cursor: default;
+}
+
+.transaction-table {
+	border: 1px solid black;
+	width: 100%;
+	background-color: white;
+	cursor: default;
+}
+
+#transactionTable thead tr th { text-align: left; }
+#transactionTable tbody tr:nth-child(even) { background-color: #DEB887; }
+#transactionTable tfoot tr td { border-top: 1px solid black; }
+
+.two-third-width { width: 70%; }
+
+div div #transactionTable tbody .transaction-table-line-marked {
+	background-color: #0080FF;
+}
+div div #transactionTable tbody .transaction-table-line-marked:hover {
+	color: black;
+}
+
+.btn {
+	padding: 4px 8px;
+	font-size: 13pt; 
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+.btn:hover { background-color: #0080FF; }
+
+.error-box {
+	position: absolute;
+	display: block;
+
+	margin: 0;
+	margin-top: -60px;
+	border: 2px solid black;
+	
+	width: 80%;
+
+	background-color: red;
+	opacity: 0.95;
+}
+
+.error-schrift { font-weight: bold; }
+.redMarked { border-color: red; }
+.elementHidden { display: none; } 
